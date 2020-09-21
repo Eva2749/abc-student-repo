@@ -1,0 +1,6 @@
+#myRange{
+  position: relative;
+  /* relative to its normal position */
+  left:-99px;
+  margin-left:102px;
+}

@@ -178,7 +178,7 @@ function letApplesFall(num){
 
 
 
-
+//below is the previos attempt
 // function growApples(){
 //   var x = document.getElementById("create").value;
 //   cumulative = cumulative + parseInt(x);//with the help of Jingtian

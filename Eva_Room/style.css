@@ -6,7 +6,7 @@ body{
 #title1{
   position: absolute;
   left:500px;
-  top:10px;
+  top:30px;
   font-size: 40px;
   letter-spacing: 2px;
   font-family: 'Spicy Rice', cursive;
@@ -15,7 +15,7 @@ body{
 #title2{
   position: absolute;
   left:550px;
-  top:70px;
+  top:80px;
   font-size: 40px;
   letter-spacing: 2px;
   font-family: 'Spicy Rice', cursive;

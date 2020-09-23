@@ -3,8 +3,202 @@ body{
   height:100%;
 }
 
+#title1{
+  position: absolute;
+  left:500px;
+  top:10px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: 'Spicy Rice', cursive;
+}
+
+#title2{
+  position: absolute;
+  left:550px;
+  top:70px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: 'Spicy Rice', cursive;
+}
+
 
 #bg{
+  width:100%;
+  height:-webkit-fill-available;
+  z-index: -1;
+}
+
+#shell{
+  position: absolute;
+  width:200px;
+  left:150px;
+  bottom:50px;
+}
+
+#A{
+  position: absolute;
+  left:180px;
+  bottom:5px;
+  width:200px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#starfish{
+  position: absolute;
+  width:200px;
+  left:650px;
+  bottom:100px;
+}
+
+#B{
+  position: absolute;
+  left:670px;
+  bottom:10px;
+  width:200px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+#turtle{
+  position: absolute;
+  width:200px;
+  left:1050px;
+  bottom:100px;
+}
+
+#C{
+  position: absolute;
+  left:1070px;
+  bottom:50px;
+  width:200px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+.fadeAnime{
+  -webkit-animation: fadein 1s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+#fish1{
+  position: absolute;
+  top:50px;
+  left:20px;
+  width:200px;
+}
+
+#mini1{
+  position: absolute;
+  top:30px;
+  left:60px;
+  color: white;
+  font-size: 15px;
+}
+
+#fish2{
+  position: absolute;
+  top:400px;
+  left:120px;
+  width:200px;
+}
+
+#mini2{
+  position: absolute;
+  top:370px;
+  left:180px;
+  color: white;
+  font-size: 15px;
+}
+
+#fish3{
+  position: absolute;
+  top:200px;
+  left:300px;
+  width:150px;
+}
+
+#mini3{
+  position: absolute;
+  top:190px;
+  left:340px;
+  color: white;
+  font-size: 15px;
+}
+
+
+#fish4{
+  position: absolute;
+  top:400px;
+  left:600px;
+  width:100px;
+}
+
+#mini4{
+  position: absolute;
+  top:370px;
+  left:610px;
+  color: white;
+  font-size: 15px;
+}
+
+
+#fish5{
+  position: absolute;
+  top:200px;
+  right:400px;
+  width:100px;
+}
+
+#mini5{
+  position: absolute;
+  top:180px;
+  right:400px;
+  color: white;
+  font-size: 15px;
+}
+
+
+#fish6{
+  position: absolute;
+  top:360px;
+  right:250px;
+  width:100px;
+}
+
+#mini6{
+  position: absolute;
+  top:330px;
+  right:250px;
+  color: white;
+  font-size: 15px;
+}
+
+#fish7{
+  position: absolute;
+  top:100px;
+  right:120px;
+  width:100px;
+}
+
+#mini7{
+  position: absolute;
+  top:70px;
+  right:120px;
+  color: white;
+  font-size: 15px;
+}
+
+
+
+/* @keyframes swim {
+  from {left:20px;}
+  to {left:400px;}
+} */
+/* #bg{
   width:inherit;
   height:-webkit-fill-available;
   z-index: -1;
@@ -12,18 +206,37 @@ body{
 
 #house1{
   position: absolute;
-  width:300px;
+  width:250px;
   height:auto;
-  left:150px;
+  left:100px;
   bottom:80px;
+  -webkit-animation: fadein 1s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
 }
 
 #cloud1{
   position: absolute;
   width:300px;
   height:auto;
-  left:560px;
+  left:160px;
   top:80px;
+}
+
+#cloud2{
+  position: absolute;
+  width:300px;
+  height:auto;
+  left:600px;
+  top:170px;
+}
+
+#cloud3{
+  position: absolute;
+  width:300px;
+  height:auto;
+  left:1000px;
+  top:120px;
 }
 
 .text{
@@ -40,4 +253,8 @@ body{
   height:100px;
   left:250px;
   top:230px;
+} */
+
+.pointer{
+  cursor: pointer;
 }

@@ -1,0 +1,198 @@
+body{
+  width:100%;
+  height:100%;
+}
+
+html{
+  width:100%;
+  height:100%;
+}
+
+#sky{
+  position: absolute;
+  width: 100%;
+  height:200px;
+}
+
+#fall{
+  position: absolute;
+  width:50%;
+  height:50%;
+  top:50px;
+  left:650px;
+  z-index: 1;
+}
+
+#container{
+  position: absolute;
+  width:50%;
+  height:50%;
+  left:650px;
+}
+
+#container2 {
+  position: absolute;
+  top:500px;
+  left:200px;
+  width:700px;
+  height:70px;
+}
+
+#container2 p{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.typing{
+ font-size: 1rem;
+ font-weight: normal;
+ -webkit-animation: type 3s steps(50, end) forwards;
+ animation: type 3s steps(50, end) forwards;
+}
+
+.typing-item{
+ width:100%;
+ white-space:nowrap;
+ overflow:hidden;
+}
+
+.delay{
+  display: none;
+}
+
+@-webkit-keyframes type{
+ from { width: 0;}
+}
+
+@keyframes type{
+ from { width: 0;}
+}
+
+
+#tree{
+  position: absolute;
+  top:50px;
+  width:100%;
+  height: auto;
+  display: block;
+  z-index: -1;
+}
+
+#man{
+  position: absolute;
+  top:600px;
+  left:50px;
+  width:100px;
+  height: auto;
+}
+
+#create{
+  position: absolute;
+  top:70px;
+}
+
+#text1{
+  position: absolute;
+  top:0px;
+}
+
+#text2{
+  position: absolute;
+  top:20px;
+}
+
+
+
+#five{
+  position: absolute;
+  width:120px;
+  top:600px;
+  left:200px;
+  font-size: 20px;
+  background-color: black;
+  color:white;
+  display: none;
+  -webkit-animation: fadein 1s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+
+#ten{
+  position: absolute;
+  width:120px;
+  top:600px;
+  left:400px;
+  font-size: 20px;
+  background-color: black;
+  color:white;
+  display: none;
+  -webkit-animation: fadein 1s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+#thirty{
+  position: absolute;
+  width:120px;
+  top:600px;
+  font-size: 20px;
+  left:600px;
+  background-color: black;
+  color:white;
+  display: none;
+  -webkit-animation: fadein 1s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+.text3{
+  position: absolute;
+  top:140px;
+  font-size: 20px;
+  top:200px;
+  left:50px;
+  font-size: 30px;
+  font-family: 'Rosario', sans-serif;
+}
+
+
+#appleFall{
+  display: none;
+  position: absolute;
+  top:280px;
+  left:50px;
+}
+
+#warn{
+  display: none;
+  position: absolute;
+  top:100px;
+  left:20px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Rosario', sans-serif;
+}
+
+.apple{
+  position: absolute;
+  top:0px;
+  width:30px;
+  animation-name:fallApple;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+ }
+
+
+@keyframes fallApple {
+  from {top: 0px;}
+  to {top: 780px;}
+}

@@ -1,0 +1,85 @@
+html{
+  width:100%;
+  height:100%;
+}
+
+body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+  height:100%;
+  width:100%;
+}
+
+#container{
+  position: relative;
+  width:100%;
+  height:100%;
+}
+
+.eyes{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+
+.eye {
+  position: relative;
+  width:400px;
+  height:150px;
+  display: inline-block;
+  margin:5%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ball{
+  position: absolute;
+  width:50px;
+  height:50px;
+  background:rgb(27, 42, 82);
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border:15px solid rgb(102, 107, 122);
+}
+
+#input{
+  opacity: 0;
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:20%;
+  height:3%;
+  font-size: 100%;
+  -webkit-animation: marquee 12s infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay:3s;
+}
+
+#textInput{
+  display: none;
+  position: absolute;
+  top:70%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:20%;
+  height:3%;
+  font-size: 100%;
+}
+
+
+@-webkit-keyframes marquee {
+    0% {text-indent:100%;}
+    100% {text-indent:-350%}
+}

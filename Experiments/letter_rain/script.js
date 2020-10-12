@@ -22,6 +22,8 @@ let letterSpans = letters.map((letter)=>{ return "<span>"+letter+"</span>"});
 // string. we do this with the
 // join-method: https://www.w3schools.com/jsref/jsref_join.asp
 contentElement.innerHTML = letterSpans.join("");
+
+console.log(contentElement);
 // after the new tags are on the page, we select them
 // so we can modify their position later on
 let spanTags = contentElement.getElementsByTagName("span");

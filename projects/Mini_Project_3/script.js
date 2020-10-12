@@ -44,7 +44,7 @@ function volumeInput(){
   console.log(squares);
   // get number of squares in squareContainer (the length works here because the squares is already an array here)
   let squaresNumber = squares.length;
-
+  console.log(squaresNumber);
 
   if (oscillatorStarted === true) {
     oscillator.start(0);

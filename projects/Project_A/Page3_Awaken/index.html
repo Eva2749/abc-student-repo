@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Monster Awake</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body onload="playAudio()">
+
+    <!-- for the starry background -->
+    <div id="background"></div>
+    <div id="midground"></div>
+    <div id="foreground"></div>
+
+    <audio id="robotVoice" src="../audio/robot.wav"></audio>
+    <audio id="aliveVoice" src="../audio/alive.wav"></audio>
+    <audio id="calculating" src="../audio/calculating.wav"></audio>
+
+
+    <div id="wholeContainer">
+      <div id="content">
+        <p id="line1">What happened? Is anybody here?</p>
+        <br>
+        <p id="line2">Why am I talking? I thought I was dead...</p>
+        <br>
+            <p id="line3">👀 So am I still...</p>
+      </div>
+      <h1 onmouseover="bigText(this)" onmouseout="normalText(this)"  id="alive">ALIVE???</h1>
+    </div>
+
+
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

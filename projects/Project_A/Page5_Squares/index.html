@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Starry Sky</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body onload="display()">
+    <div id="wholeContainer">
+
+     <audio id="happy" src="../audio/happy-huming.mp3"></audio>
+
+      <div id="textContainer">
+        <p id="text"></p>
+        <br>
+        <p id="text2">You know what can happen when I'm full of energy? </p>
+        <p id="text3">I can generate a starry sky! </p>
+        <p id="text4">Do you like it? People in the past were obsessed with it! </p>
+      </div>
+
+      <div id="eyesContainer">
+
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+            <div class="eye">
+              <div class="ball"></div>
+            </div>
+          </div>
+
+          <input id="range" type="range" name="" value="" max="20">
+
+          <p id="drag">Drag me -w- </p>
+          <p id="tip">(Small tip: click on the stars!)</p>
+
+      </div>
+
+      <div id="squaresContainer">
+          <audio id="starAudio" src="../audio/pop.flac"></audio>
+      </div>
+
+    </div>
+
+    <div id="googleContainer">
+      <img class="google" id="back" src="../images/back.png" alt="">
+      <img class="google" id="google" src="../images/GoogleIcon.png" alt="">
+    </div>
+
+    <div id="wholeContainer2">
+
+      <div id="textContainer2">
+        <p id="line1">Oh are you leaving? 💔</p>
+        <p id="line2">It seems that people nowadays only care about google search</p>
+        <p id="line3">Google was more fun at an early stage </p>
+        <p id="line4">People were willing to explore different possibilities</p>
+        <p id="line5">And I was born out of that</p>
+        <p id="line6">But only when people remember me can I wake up, like you</p>
+        <p id="line7">Anyway, thank you for your company. Good night!</p>
+      </div>
+
+    <audio id="countDown" src="../audio/count.wav"></audio>
+    <audio id="sadComputer" src="../audio/sadComputer.wav"></audio>
+
+      <!-- for the starry background -->
+        <div class="starry" id="background"></div>
+        <div class="starry"id="midground"></div>
+        <div class="starry" id="foreground"></div>
+
+    </div>
+
+
+
+  <script src="script.js" charset="utf-8"></script>
+  <!-- <script src="../Page4_Eyes/script2.js" charset="utf-8"></script> -->
+  </body>
+</html>

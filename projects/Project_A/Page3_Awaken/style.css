@@ -1,0 +1,188 @@
+/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro'); */
+
+
+body{
+  background-color: black;
+  padding: 1em;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+/* https://css-tricks.com/parallax-background-css3/ */
+#background {
+  width:100%;
+  height:100%;
+	background: black url(../images/background.png) repeat 5% 5%;
+
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 500s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/* medium-sized stars move moderately */
+#midground {
+  width:100%;
+  height:100%;
+	background: url(../images/midground.png) repeat 20% 20%;
+	position: absolute;
+
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 450s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/* the larger stars go faster */
+#foreground {
+  width:100%;
+  height:100%;
+	background: url(../images/foreground.png) repeat 35% 35%;
+	position: absolute;
+	/* top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 300; */
+
+	-webkit-animation-name: STAR-MOVE;
+	-webkit-animation-duration: 400s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes STAR-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to {
+		left: -10000px;
+		top: -2000px;
+	}
+}
+
+#wholeContainer{
+  position: relative;
+  width:100%;
+  margin-top:5%;
+}
+
+
+#content p{
+  color: white;
+  /* font-family: 'Source Code Pro', monospace; */
+  font-family: 'Press Start 2P', cursive;
+  /* font-family:'Cyberspace-Raceway-Back',sans-serif; */
+  font-size: 25px;
+  line-height: 100px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ }
+
+/* https://www.codesdope.com/blog/article/12-creative-css-and-javascript-text-typing-animati/ */
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+#line1{
+  margin-top: 100px;
+  padding: 0;
+  text-align: center;
+  animation: typing 3s steps(40, end);
+  animation-fill-mode: forwards;
+  opacity:0;
+  animation-delay: 1s;
+}
+
+#line2{
+  text-align: center;
+  opacity:0;
+  animation: typing2 3s steps(40, end);
+             /* blink-caret .75s step-end infinite; */
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+ }
+
+#line3{
+  text-align: center;
+  opacity:0;
+  animation: typing3 3s steps(40, end);
+            /* blink-caret .75s step-end infinite; */
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+/* https://freefrontend.com/css-text-effects/ */
+#alive{
+  display: none;
+  cursor:pointer;
+  font-size: 50px;
+  position: relative;
+  left:40%;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow:
+						8px 8px #ff1f8f,
+						20px 20px #000000;
+  font-family: 'Bowlby One SC', cursive;
+  -webkit-animation-name: tremble;
+  -webkit-animation-duration: 0.8s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+
+/* https://codepen.io/TheodoreVorillas/pen/knuze */
+@-webkit-keyframes tremble {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg);}
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(5px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-2px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(6px, 2px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -3px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	100% { -webkit-transform: translate(5px, -2px) rotate(-1deg); }
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0;  opacity:1;}
+  to { width: 100%;  opacity:1;}
+}
+
+
+@keyframes typing2{
+0%{width: 0; opacity:1;}
+100%{width:100%;opacity:1;}
+}
+
+
+@keyframes typing3{
+  0%{width: 0; opacity:1;}
+  100%{width:100%; opacity:1;}
+}
+
+@keyframes blinking {
+    0%		{ background-color: #10c018;}
+		25%		{ background-color: #ef0a1a;}
+		75%		{ background-color: #254878;}
+		100%	{ background-color: #04a1d5;}
+}
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+} */
+
+/* .text{
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+@keyframes fall {
+  from{top:0px;}
+  to{top:1000px;}
+} */

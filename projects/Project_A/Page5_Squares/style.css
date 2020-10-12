@@ -1,0 +1,399 @@
+html{
+  width:100%;
+  height:100%;
+}
+
+body{
+  width:100%;
+  height:100%;
+  background-color: black;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+}
+
+#wholeContainer{
+  top: 0; left: 0; right: 0; bottom: 0;
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  z-index: 1;
+}
+
+#text,#text2,#text3,#text4{
+  margin-left: 5%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  color:white;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+}
+
+#text{
+  animation: typing 3s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+#text2{
+  margin-top: -1%;
+  opacity: 0;
+  animation: typing2 3s steps(40, end);
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+
+#text3{
+  opacity: 0;
+  margin-top:3%;
+  animation: typing2 3s steps(40, end);
+  animation-fill-mode: forwards;
+  animation-delay: 7s;
+}
+
+#text4{
+  opacity: 0;
+  margin-top:3%;
+  animation: typing2 3s steps(40, end);
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+#textContainer{
+  position: relative;
+  top:5%;
+}
+
+
+#eyesContainer{
+  opacity:0;
+  position: relative;
+  width:50%;
+  height:65%;
+  animation-name:fadein;
+  animation-duration: 2s;
+  animation-delay: 14s;
+}
+
+@keyframes fadein {
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.eyes{
+  position: relative;
+  top:20%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+
+.eye {
+  /* position: relative; */
+  width:200px;
+  height:75px;
+  justify-content: center;
+  /* display: inline-block; */
+  margin:5%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.ball{
+  position: relative;
+  width:25px;
+  height:25px;
+  /* left:35%;
+  top:18%; */
+  background:rgb(27, 42, 82);
+  border-radius: 50%;
+  border:15px solid rgb(102, 107, 122);
+}
+
+#range{
+  position: relative;
+  top:30%;
+  left:30%;
+  width:40%;
+  margin: 14.8px 0;
+  background-color: transparent;
+  /* Hides the slider so that custom slider can be made */
+  -webkit-appearance: none;
+  /* Otherwise white in Chrome */
+  background:transparent;
+}
+
+/* https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+
+input[type=range]:focus {
+  /* Removes the blue border  */
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+#drag{
+  color: grey;
+  font-size:20px;
+  font-family: 'Source Code Pro', monospace;;
+  position: relative;
+  top:28%;
+  left:40%;
+}
+
+#tip{
+  color: grey;
+  font-size:15px;
+  font-family: 'Source Code Pro', monospace;;
+  position: relative;
+  top:25%;
+  left:30%;
+}
+
+#squaresContainer{
+  position: relative;
+  width:50%;
+  height:65%;
+}
+
+.squares{
+  cursor:pointer;
+  transform: rotate(45deg);
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  /* animation-duration: 2s; */
+}
+
+@keyframes twinkle {
+  0%{transform:scale(1) rotate(45deg); }
+  50%{transform:scale(0.2) rotate(45deg);}
+  100% {transform:scale(1) rotate(45deg);}
+}
+
+
+#googleContainer{
+  position: absolute;
+  bottom:1%;
+  width:100%;
+  height:10%;
+  vertical-align: center;
+}
+
+#back{
+  position: relative;
+  display: inline-block;
+  width:1.5%;
+  top:35%;
+  margin-left:1%;
+  cursor:pointer;
+}
+
+#google{
+  position: relative;
+  display: inline-block;
+  width:5%;
+  top:40%;
+  cursor:pointer;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes typing2{
+0%{width: 0; opacity:1;}
+100%{width:100%;opacity:1;}
+}
+
+#wholeContainer2,#background,#midground,#foreground{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  z-index: -1;
+}
+
+#background {
+  width:100%;
+  height:100%;
+	background: black url(../images/background.png) repeat 5% 5%;
+  top: 0; left: 0; right: 0; bottom: 0;
+	/* -webkit-animation-name: STAR-MOVE; */
+	-webkit-animation-duration: 500s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/* medium-sized stars move moderately */
+#midground {
+  width:100%;
+  height:100%;
+	background: url(../images/midground.png) repeat 20% 20%;
+	position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+	/* -webkit-animation-name: STAR-MOVE; */
+	-webkit-animation-duration: 450s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+/* the larger stars go faster */
+#foreground {
+  width:100%;
+  height:100%;
+	background: url(../images/foreground.png) repeat 35% 35%;
+	position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+	/* -webkit-animation-name: STAR-MOVE; */
+	-webkit-animation-duration: 400s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes STAR-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to {
+		left: -100%;
+		top: -100%;
+	}
+}
+
+#textContainer2  {
+  position: relative;
+  top:20%;
+  text-align: center;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size:20px;
+  line-height: 35px;
+
+}
+
+#line1{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+#line2{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+  opacity:0;
+  animation-delay: 2s;
+}
+
+#line3{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+  opacity:0;
+  animation-delay: 6s;
+}
+
+#line4{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+  opacity:0;
+  animation-delay: 9s;
+}
+
+#line5{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+  opacity:0;
+  animation-delay: 12s;
+}
+
+#line6{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+  opacity:0;
+  animation-delay: 15s;
+}
+
+#line7{
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 3s steps(40, end);
+  animation-fill-mode: forwards;
+  margin: 3% auto; /* Gives that scrolling effect as the typing happens */
+  opacity:0;
+  animation-delay: 19s;
+}
+
+@keyframes type1 {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes type2 {
+0%{width: 0; opacity:1;}
+100%{width:100%;opacity:1;}
+}
+
+@keyframes blinking {
+    0%		{ background-color: #10c018;}
+		25%		{ background-color: #ef0a1a;}
+		75%		{ background-color: #254878;}
+		100%	{ background-color: #04a1d5;}
+}

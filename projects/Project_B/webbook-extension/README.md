@@ -8,10 +8,15 @@ How would a web page be like if it's a book? It may become crumpled, has a yello
 
 Webbook, as the name implies, turns your web page into a book. Your web page would become older and older as you visit it more and more. It will be crumpled, has a yellowish tinge, grow some bookworms, or blur some letters after browsing. The payback is that you can add a bookmark to the web page. Be aware when you browsing, think twice before you open a new tab, and treat your web pages carefully!
 
+See visual descriptions below!
+
+The website will get older as you visit it for many times.
 ![old1](old1.png)
 ![old2](old2.png)
 ![old3](old3.png)
 ![old4](old4.png)
+
+You could also add a bookmark! 
 ![bookmark](bookmark.gif)
 
 

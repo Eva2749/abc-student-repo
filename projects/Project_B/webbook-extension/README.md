@@ -10,7 +10,7 @@
 
 
 
-#TECHNICAL
+# TECHNICAL CHALLENGES
 
 1. Changing the background of all websites
 
@@ -30,4 +30,4 @@ Before the development process, we thought it would be a hard part. However, we 
 
 5. Bookmark function (track window position)
 
-The bookmark functions like this: click the bookmark button, and the popup script will send a message to background script. The background script then sends message to content script in quest for the current window position. Then the position will be stored in background script. When the website is open again, the background script will send the stored window position to the content script and the content script will direct the webpage to where the position is recorded. There're a lot of messages sending process, and keeping track of the message by using console log is crucial to avoid confusion. 
+The bookmark functions like this: click the bookmark button, and the popup script will send a message to background script. The background script then sends message to content script in quest for the current window position. Then the position will be stored in background script. When the website is open again, the background script will send the stored window position to the content script and the content script will direct the webpage to where the position is recorded. There're a lot of messages sending process, and keeping track of the message by using console log is crucial to avoid confusion.

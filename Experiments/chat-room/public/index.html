@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>chatroom</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/socket.io/socket.io.js"></script>
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="title">
+        <h1>次学期のバララ小悪魔を見る</h1>
+      </div>
+      <br>
+      <div class="chatwrapper">
+        <div class="namebox">
+          <p>名前 <input autocomplete="off" id="name" type="text" value="" placeholder="君の名前は..?"></p>
+        </div>
+        <div class="chatbox">
+          <ul id="chat">
+
+          </ul>
+        </div>
+        <div class="messagebox">
+          <input id="message" type="text" name="" value="" placeholder="何か言ってください">
+          <button id="send" type="button" name="button">送信</button>
+        </div>
+      </div>
+    </div>
+
+  <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

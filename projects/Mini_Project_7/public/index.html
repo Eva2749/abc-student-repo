@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Share your life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="emojionearea.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+
+    <script src="emojionearea.min.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- <script src="/jquery-2.1.1.js"></script> -->
+    <!-- <script src="/socket.io-stream.js"></script> -->
+
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <div class="contentbox">
+        <h1>Welcome, <span id="username">User</span>!</h1>
+
+        <div class="namebox">
+          <p id="namequestion">What's your preferred name?</p>
+          <input id="namebox" type="text" placeholder="your preferred name" autocomplete="off"></input>
+          <!-- <p id="nameStatement">Enter to confirm <span id="typedName"></span></p> -->
+        </div>
+
+        <p id="sharequestion">Anything you would like to share?</p>
+        <textarea id="contentarea" placeholder="Say something :)"></textarea>
+        <!-- https://stackoverflow.com/questions/3793090/html-is-there-any-way-to-show-images-in-a-textarea -->
+        <!-- <div id="contentarea" contentEditable="true"></div> -->
+
+   <div class="container">
+
+     <!-- <div class="fileUpload">
+       <label for="files" class="btn">Upload an Image/Video</label>
+       <input id="fileInput" type="file" accept="video/*" accept="image/*"></input>
+     </div> -->
+
+     <div class="moodbox">
+       <p id="feel">How are you feeling now?</p>
+         <p class="emoji" id="happy">😊</p>
+         <p class="emoji" id="sad">😞</p>
+         <p class="emoji" id="bored">😑</p>
+         <p class="emoji" id="angry">😠</p>
+         <p class="emoji" id="confused">🤔</p>
+      <p id="moodNow">You are <span id="moodbox"></span> now</p>
+     </div>
+
+     <div class="post">
+       <button id="post" type="button">Post</button>
+     </div>
+
+   </div>
+  </div>
+
+      <div class="postbox">
+        <h1>What' New</h1>
+        <!-- <div class="contentContainer"> -->
+          <!-- <div class="userinfobox"> -->
+            <!-- <p><span id="currentmood"></span> <span id="userpostedName"></span></p> -->
+          <!-- </div> -->
+          <!-- <div class="postedinfobox"> -->
+            <!-- <p id="postedContent"></p>  -->
+            <!-- <p id="likes" ></p> -->
+            <!-- <img id="likesIcon" width = "100px"> -->
+          <!-- </div> -->
+        <!-- </div> -->
+        <!-- <div class="users"> -->
+        <!-- </div> -->
+        <!-- <div class="posts"> -->
+          <!-- <div class="postedinfobox"> -->
+            <!-- <p id="postedContent"></p>  -->
+            <!-- <p id="likes" ></p> -->
+            <!-- <img id="likesIcon" width = "100px"> -->
+          <!-- </div> -->
+
+        </div>
+
+
+
+      <!-- <div class="profilebox">
+
+      </div> -->
+
+    </div>
+   <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+body,html{
+  width:100%;
+  height:100%;
+  margin:0;
+  font-family: system-ui;
+  background-image: url(sky.jpg);
+  background-size: cover;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contentbox{
+  padding: 20px;
+  margin-top: 50px;
+  width:25vw;
+  height:60vh;
+  /* border-color: #ffffff;
+  border-style: groove; */
+  font-family:system-ui;
+  box-shadow: 4px 6px 9px black;
+}
+
+
+
+.profilebox{
+  margin-top: 50px;
+  width:20vw;
+  height:80vh;
+  border-color: black;
+  border-style: groove;
+}
+
+h1{
+  margin-top:5px;
+}
+
+#contentarea{
+  resize: none;
+  width:97%;
+  height: 50%;
+  border-color: black;
+  border-style:solid;
+  margin-bottom:10px;
+}
+
+#contentarea::placeholder{
+  font-family: system-ui;
+}
+
+#namequestion{
+  font-weight: 400;
+}
+
+#sharequestion{
+  font-weight: 400;
+}
+
+#name{
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+/* #confirmname{
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-family: system-ui;
+  height:28px;
+} */
+
+#nameStatement{
+  display: inline-block;
+  color: #757575;
+  font-family: system-ui;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#fileinput{
+  color: grey;
+  width:60%;
+}
+
+#post{
+  position: relative;
+  left:55%;
+  background-color: black;
+  color: white;
+  font-family: system-ui;
+  height:28px;
+}
+
+.container{
+  display: flex;
+}
+
+
+.emoji{
+  display: inline-block;
+  cursor:pointer;
+}
+
+#feel{
+  display: inline-block;
+}
+
+.moodbox{
+  margin-top: -25px;
+}
+
+#moodNow{
+  display: none;
+  margin-top: -15px;
+}
+
+#moodbox{
+  font-weight: bold;
+}
+/* https://codepen.io/dcode-software/pen/RerBgR?__cf_chl_jschl_tk__=b6d7d06e6cfb2c63ff15157fe3c8dfa28bf62f81-1605873205-0-AVALJt9UpnI28QjTmg6Dp6QZY8moy3DR38Ct0310k3rgukooWHrCnJOxNaTZiphJohbWKi9iIFNXkjLCuw-KhAsOno_OfMoxGHTXVl4blg-UUiuTOg-tousVvjxHd_15hW230vpCnsuwKiBELp5lpNMnF3gKHU2jTXbMkNBV9diWPb3bvc21nzeCwKp1Qh5mvJPPQi5CgQqwm0MamEFCyqwLfvj23OS5VH2mOtEOT1RAyCQGTv-V8Noq1_uJ2MWkyYN64Ohwr2AS_SQO1Yjtk9HX5mlaJLiPKFF5mbUwHJO08t5iXzZi7hwOfVkaOGd_SjtRPqgIecGvSDxnwWADFROnWEeUm3BCEOZ8kokKTvAKv1Dwz0MUQ6YulRRfs3Y2YHZ4cKqmHufOibSGRg6GvUk */
+/* about how to customize file upload */
+
+/* .users{
+  border-color: black;
+  border-style: solid;
+  margin:10px;
+  margin-right: 5px;
+  width:30%;
+}
+
+.posts{
+  border-color: black;
+  border-style: solid;
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-right: 10px;
+  width:70%;
+} */
+
+
+
+.contentContainer{
+  display: flex;
+  /* border-color: black;
+  border-style: solid; */
+  margin:10px;
+  height:fit-content;
+}
+
+.userinfobox{
+  width:25%;
+  height:fit-content;
+  box-shadow: 3px 2px 5px 0px grey;
+  /* border-color: blue;
+  border-style: dashed; */
+  margin:0;
+  margin-right:5px;
+  margin-bottom: 10px;
+}
+
+.postedinfobox{
+  width:70%;
+  display: inline-block;
+  height:fit-content;
+  /* box-shadow: 1px 2px 6px 0px grey; */
+
+  /* border-color: blue;
+  border-style: dashed; */
+  margin:0;
+  margin-left: 10px;
+}
+
+
+.postbox{
+  overflow: scroll;
+  text-align: center;
+  margin-top: 50px;
+  width:45vw;
+  height:90vh;
+  /* border-color: #ffffff;
+  border-style: groove; */
+  box-shadow: 6px 6px 8px black;
+}
+
+
+
+/*
+.userpostedname{
+  background-color: green;
+  color:white;
+  border-radius: 50%;
+  padding:10%;
+  margin:50px;
+  margin-top:10px;
+  margin-bottom: 0;
+} */
+
+
+
+.likesBox{
+  /* text-align: center; */
+  /* border-color: grey;
+  border-style: groove; */
+  margin:10px;
+  height: 20px;
+  display: block;
+}
+
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_word-wrap */
+#postedContent{
+  text-align: left;
+  margin:0;
+  word-wrap: break-word;
+}
+
+#likes{
+  display: inline-block;
+  float:right;
+  margin:0;
+}
+
+#likesIcon{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  float:right;
+  cursor: pointer;
+}

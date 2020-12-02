@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+
+    <div class="scene">
+      <div class="cube">
+        <div class="cube__face front">Messages</div>
+        <div class="cube__face back">Messages</div>
+        <div class="cube__face right">Messages</div>
+        <div class="cube__face left">Messages</div>
+        <div class="cube__face top">Messages</div>
+        <div class="cube__face bottom">Messages</div>
+      </div>
+    </div>
+
+    <div class="infobox">
+      <p id="messagesNum"><span id="messagesCount">0</span> Messages</p>
+      <p id="instructions">Click to see the messages OR leave a message yourself!</p>
+      <p id="instructions2">Hint: click again to close it</p>
+    </div>
+
+
+  <div class="messageinfobox">
+    <div class="inputarea">
+      <p id="messagetitle">Leave a message here!</p>
+      <button id="send">Confirm</button>
+      <textarea id="messagebox" name="name" rows="12" cols="80" placeholder="You may not be the only survivor! Leave messages like the number of wreckages you've collected and where you are going to let others know about your existence:)! Press Enter or click the button to confirm"></textarea>
+    </div>
+
+    <div class="historyarea">
+      <p id="historytitle">History Messages</p>
+      <div id="historybox">
+        <ul id="newMessageBox">
+          <!-- <li id="newMessages">Hi there</li> -->
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+   <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

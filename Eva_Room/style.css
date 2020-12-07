@@ -1,31 +1,88 @@
 body{
   width:100%;
   height:100%;
+  margin:0;
+}
+
+.title{
+  position: absolute;
+  top:10%;
+  width:100%;
+  height:10%;
+  text-align: center;
 }
 
 #title1{
-  position: absolute;
-  left:500px;
-  top:30px;
   font-size: 40px;
   letter-spacing: 2px;
   font-family: 'Spicy Rice', cursive;
 }
 
 #title2{
-  position: absolute;
-  left:550px;
-  top:80px;
   font-size: 40px;
   letter-spacing: 2px;
   font-family: 'Spicy Rice', cursive;
+}
+
+/* https://codepen.io/tedmcdo/pen/PqxKXg */
+
+.wavebox{
+  overflow: hidden;
+  position: absolute;
+  top: -198px;
+  width: 100%;
+  height:-webkit-fill-available;
+}
+
+.wavebottom {
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
 }
 
 .ocean {
   position: absolute;
   width: 100%;
   height: 300px;
-  bottom:-80%;
+  bottom:-120%;
 }
 
 
@@ -161,9 +218,9 @@ body{
 
 #bg{
   width:100%;
-  height:1500px;
+  height:1850px;
   /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear */
-  background-image: linear-gradient(#e2eac5,#afe2ef,#a2e1fb,#02b2c0,#04a7b5,#015c7b);
+  background-image: linear-gradient(#c5dcea,#ffffff,#035871,#015971,#035871,#035871,#035871);
   z-index: -1;
 }
 
@@ -234,7 +291,7 @@ body{
   position: absolute;
   top:35%;
   left:20%;
-  width:200px;
+  width:100px;
 }
 
 #mini1{
@@ -248,7 +305,7 @@ body{
   position: absolute;
   top:45%;
   right:25%;
-  width:200px;
+  width:100px;
 }
 
 #mini2{
@@ -262,7 +319,7 @@ body{
   position: absolute;
   top:65%;
   right:57%;
-  width:150px;
+  width:100px;
 }
 
 #mini3{

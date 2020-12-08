@@ -31,9 +31,22 @@ if (document.images) {
 }
 
 
+
 startbt.addEventListener("click", () => {
     introVideo.play();
     startbt.style.display = 'none'
+  setTimeout(() => {
+        introVideo.style.display = "none";
+    }, 20000)
+
+    setTimeout(() => {
+        text.style.animationName = "typing";
+    }, 20000)
+
+    setTimeout(() => {
+        text.style.opacity = "1";
+        clickme.style.opacity = "1";
+    }, 20000)
 })
 
 

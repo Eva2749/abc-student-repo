@@ -16,10 +16,8 @@ The website will get older as you visit it for many times.
 ![old3](old3.png)
 ![old4](old4.png)
 
-You could also add a bookmark! 
+You could also add a bookmark!
 ![bookmark](bookmark.gif)
-
-
 
 
 # TECHNICAL CHALLENGES

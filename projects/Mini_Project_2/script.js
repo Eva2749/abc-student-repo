@@ -21,7 +21,7 @@ phoneOnDesk.addEventListener("click", ()=>{
 
 //time function, from https://www.w3schools.com/howto/howto_js_countdown.asp
 //set the time counting down to
-var countDownDate = new Date("Oct 8, 2020 12:00:15").getTime();
+var countDownDate = new Date("Dec 13, 2020 12:00:15").getTime();
 let gap = 1000;
 var x  = setInterval (countDown, gap);
 function countDown(){

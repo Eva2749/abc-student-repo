@@ -1,47 +1,73 @@
+let bubbles = document.getElementsByClassName("bubble");
+let fishodd = document.getElementsByClassName("fishodd");
+let fisheven = document.getElementsByClassName("fisheven");
+let previewodd = document.getElementsByClassName("previewodd");
+let previeweven = document.getElementsByClassName("previeweven");
 
+let counterodd = 0;
+let countereven = 0;
 
-
-function bigShell(x) {
-    x.style.height = "auto";
-    x.style.width = "250px";
-    let projectA = document.getElementById("A");
-    projectA.style.display = "block";
+for (let i = 0; i < bubbles.length; i++) {
+  bubbles[i].addEventListener("click",()=>{
+    bubbles[i].style.display = "none";
+    setTimeout(()=>{
+      bubbles[i].style.display = "block";
+    },5000)
+  })
 }
 
-function normalShell(x) {
-    x.style.height = "auto";
-    x.style.width = "200px";
-    let projectA = document.getElementById("A");
-    projectA.style.display = "none";
+setInterval(()=>{
+  counterodd += 0.25;
+  for (let i = 0; i < fishodd.length; i++) {
+      let fishoddtop = fishodd[i].offsetTop;
+      fishoddtop = fishoddtop + 2*Math.sin(counterodd);
+      fishodd[i].style.top = fishoddtop + "px";
+  }
+},100)
+
+setTimeout(()=>{
+  setInterval(()=>{
+    countereven += 0.25;
+    for (let i = 0; i < fisheven.length; i++) {
+        let fisheventop = fisheven[i].offsetTop;
+        fisheventop = fisheventop + 2*Math.sin(countereven);
+        fisheven[i].style.top = fisheventop + "px";
+    }
+  },100)
+},1000)
+
+for (let i = 0; i < previewodd.length; i++) {
+  fishodd[i].addEventListener("mouseover",()=>{
+    previewodd[i].style.animationName = "popup";
+    previewodd[i].style.opacity = "1";
+  })
+  fishodd[i].addEventListener("mouseout",()=>{
+    previewodd[i].style.animationName = "disappear";
+    previewodd[i].style.opacity = "0";
+  })
 }
 
-
-function bigStar(x) {
-    x.style.height = "auto";
-    x.style.width = "200px";
-    let projectB = document.getElementById("B");
-    projectB.style.display = "block";
+for (let i = 0; i < previeweven.length; i++) {
+  fisheven[i].addEventListener("mouseover",()=>{
+    previeweven[i].style.animationName = "popup";
+    previeweven[i].style.opacity = "1";
+  })
+  fisheven[i].addEventListener("mouseout",()=>{
+    previeweven[i].style.animationName = "disappear";
+    previeweven[i].style.opacity = "0";
+  })
 }
 
-function normalStar(x) {
-    x.style.height = "auto";
-    x.style.width = "150px";
-    let projectB = document.getElementById("B");
-    projectB.style.display = "none";
-}
+let bigProjects = document.getElementsByClassName("bigProject");
+let bigProjectsPreviews =  document.getElementsByClassName("bigProjectsPreview");
 
-
-
-function bigTurtle(x) {
-    x.style.height = "auto";
-    x.style.width = "200px";
-    let projectC = document.getElementById("C");
-    projectC.style.display = "block";
-}
-
-function normalTurtle(x) {
-    x.style.height = "auto";
-    x.style.width = "150px";
-    let projectC = document.getElementById("C");
-    projectC.style.display = "none";
+for (let i = 0; i < bigProjects.length; i++) {
+  bigProjects[i].addEventListener("mouseover",()=>{
+    console.log("mouseover");
+    bigProjectsPreviews[i].style.display = "block";
+  })
+  bigProjects[i].addEventListener("mouseout",()=>{
+    console.log("mouseout");
+    bigProjectsPreviews[i].style.display = "none";
+  })
 }

@@ -1,3 +1,5 @@
+[Download the extension here!](https://github.com/Eva2749/abc-student-repo/raw/master/projects/Mini_Project_4/Mini_Project_4.zip)
+
 ![buggy1](buggy1.png)
 
 ![buggy2](buggy2.png)

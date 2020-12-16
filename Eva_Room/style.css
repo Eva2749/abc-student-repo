@@ -2,6 +2,8 @@ body{
   width:100%;
   height:100%;
   margin:0;
+  background-color: #025871;
+  overflow-x: hidden;
 }
 
 .title{
@@ -10,19 +12,13 @@ body{
   width:100%;
   height:10%;
   text-align: center;
+  font-family: 'Spicy Rice', cursive;
+  color: beige;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
 
-#title1{
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-family: 'Spicy Rice', cursive;
-}
 
-#title2{
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-family: 'Spicy Rice', cursive;
-}
 
 /* https://codepen.io/tedmcdo/pen/PqxKXg */
 
@@ -221,9 +217,9 @@ body{
   background-color: #025871;
   overflow-y: hidden;
   width:100%;
-  height:1850px;
+  height:1050px;
   /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-linear */
-  background-image: linear-gradient(#c5dcea,#ffffff,#035871,#015971,#035871,#035871,#035871);
+  /* background-image: linear-gradient(#c5dcea,#ffffff,#035871,#015971,#035871,#035871,#035871); */
   z-index: -1;
   overflow: hidden;
 }
@@ -231,7 +227,7 @@ body{
 #projectA{
   position: absolute;
   left:15%;
-  bottom:-125%;
+  bottom:-1000px;
 }
 
 #shell{
@@ -241,7 +237,7 @@ body{
 #projectB{
   position: absolute;
   left:45%;
-  bottom:-120%;
+  bottom:-980px;
 }
 
 #starfish{
@@ -251,7 +247,7 @@ body{
 #projectC{
   position: absolute;
   left:70%;
-  bottom:-120%;
+  bottom:-1000px;
 }
 
 #turtle{
